@@ -7,7 +7,7 @@
     <title>Password generator</title>
     <style>
         body {
-            width: 200px;
+            width: 210px;
             height: 150px;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -21,9 +21,20 @@
             height: 15px;
             margin-right: 5px;
         }
-        .password-container {
-            width: 195px;
+
+        .pw-div {
+            display: run-in;
+            word-wrap: break-word;
+            display: inline-block;
+            white-space: pre-line;
+            
         }
+
+        #password {
+            max-width: 190px;
+            white-space: pre-line;
+        }
+
     </style>
 </head>
 <body>
@@ -34,9 +45,10 @@
         <input type="number" id="pw-lenght" name="password-lenght" min="10" max="2048" value="10" required>
         <input id="submit-button" type="submit" value="Generate">
     </form>
-    <div class="password-container">
+    <div class="pw-div">
         <p id="password"></p>
     </div>
+    
 
     <script src="popup.js"></script>
 </body>
