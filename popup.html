@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <style>
+        body {
+            width: 200px;
+            height: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #title-1 {
+            font-size: 15px;
+            margin-top: 0%;
+        }
+
+        #icon {
+            float: left;
+            height: 15px;
+            margin-right: 5px;
+        }
+        .password-container {
+            width: 195px;
+        }
+    </style>
+</head>
+<body>
+    <img id="icon" src="icon.png" alt="icon">
+    <h1 id="title-1">Password generator</h1>
+    <form id="gen" method="post">
+        <label for="password-lenght">Lenght </label>
+        <input type="number" id="pw-lenght" name="password-lenght" min="10" max="2048" value="10" required>
+        <input id="submit-button" type="submit" value="Generate">
+    </form>
+    <div class="password-container">
+        <p id="password"></p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
